@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>Perfil de Yeraliz</title>
+</head>
+<body>
+    <div style="margin :24px;">
+        <nav class="nav navbar-light" style ="background-color: rgb(238, 230, 230);"> 
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="color: rgb(227, 233, 233);">inicio</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Unidad 1</a>
+                            <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                        href="perfil.html">Perfil</a><br>
+                        <a class="dropdown-item"
+                        href="calculadora.html">Calculadora</a><br>
+                        <a class="dropdown-item"
+                        href="tienda.html">Tienda parte 1</a>
+
+                        </div>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false" >Unidad 2</a>
+                            <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                        href="tiendapedido.html">tienda pedido</a><br>
+                        <a class="dropdown-item"
+                        href="json.html">json</a><br>
+                        <a class="dropdown-item"
+                        href="tiendapedido2.html">Tienda parte 2</a>
+
+                        </div>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false" >Unidad 3</a>
+                            <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                         class="dropdown-item"
+                        href="API.html">base de datos</a><br>
+                        <a class="dropdown-item"
+                        href="peliculas.html">peliculas</a>
+
+                        </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <style>
+        body{
+            background-color: rgb(236, 226, 226);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(231, 221, 221);
+            text-align: center;
+        }
+        .perfil{
+            margin: 20px auto;
+            width: 800px;
+            max-width: auto;
+            background-color: blueviolet;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(156, 148, 148);
+        }
+        .foto-perfil{
+            width: 250px;
+            height: 180px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <div class="perfil">
+        <img src="panda.jpg" alt=""
+        class="foto-perfil">
+        <h1 id="nombre">Nombre de perfil</h1>
+        <h3 id="especialidad">especialidad del cetis</h3>
+        <h2>Gustos personales</h2>
+        <li id="musica">Musica favorita</li>
+        <li id="programas">Programas favoritos</li>
+        <h2>Informacion de contacto</h2>
+        <p id="telefono">telefono</p>
+        <p id="correo">correo</p>
+        <p id="biografia">biografia</p>
+        
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.getElementById('nombre').textContent='Yeraliz Perez';
+            document.getElementById('especialidad').textContent='programacion';
+            document.getElementById('musica').textContent='Twenty one pilots, AC/DC, Jose Jose, Cumbias';
+            document.getElementById('programas').textContent='Kick Buttouski, La rosa de Guadalupe, Bajoterra';
+            document.getElementById('telefono').textContent='8999123809';
+            document.getElementById('correo').textContent='yeraaperezz@gmail.com';
+            document.getElementById('biografia').textContent='a hueso, programanding';
+
+        })
+    </script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,208 @@
+{"items":[
+    {
+        "category":"Desayunos",
+        "items":[
+            {
+                "name":"Estrellado con pan",
+                "description":"Un huevo estrellado con 3 rebanadas de pan y tocina",
+                "price":"$80.00",
+                "image":"img/18.jpg" 
+            },
+            {
+                "name":"Omelettes",
+                "description":"Omelettes con chilaquiles verdes y la crema es opcional",
+                "price":"$70.00",
+                "image":"img/17.jpg" 
+            },
+            {
+                "name":"Revuelto",
+                "description":"Revuelto con aguacate y rebanadas de pan",
+                "price":"$50.00",
+                "image":"img/16.jpg" 
+            },
+            {
+                "name":"Huevito compa",
+                "description":"Huevo estrellado basico con los complementos que se observan en la imagen",
+                "price":"$120.00",
+                "image":"img/15.jpg" 
+            },
+            {
+                "name":"Desayuno mañanero",
+                "description":"Un filete, moras, aguacate y lo demas es opcional",
+                "price":"$60.00",
+                "image":"img/14.jpg" 
+            },
+            {
+                "name":"Fruit cocktail",
+                "description":"Bandeja de frutas variada, hasta 8 variedades",
+                "price":"$45.00",
+                "image":"img/13.jpg"
+            }
+        ]
+    },
+        {
+            "category":"Almuerzos",
+            "items":[
+                {
+                    "name":"Ensalada",
+                    "description":"Ensalada clasica con aderezos",
+                    "price":"$35.00",
+                    "image":"img/24.jpg" 
+                },
+                {
+                    "name":"Spaguetti",
+                    "description":"Platillo de Spaguetti natural con queso",
+                    "price":"$40.00",
+                    "image":"img/23.jpg" 
+                },
+                {
+                    "name":"Estilo Michoacan",
+                    "description":"Variedad de leguminosas con 2 huevos duros",
+                    "price":"$70.00",
+                    "image":"img/22.jpg" 
+                },
+                {
+                    "name":"dieta",
+                    "description":"Filete de res con aguacate y 2 camarones",
+                    "price":"$70.00",
+                    "image":"img/21.jpg" 
+                },
+                {
+                    "name":"alaskk",
+                    "description":"sopa con filete remojado de lobo de alaska",
+                    "price":"$9000.00",
+                    "image":"img/20.jpg" 
+                },
+                {
+                    "name":"Sencillo",
+                    "description":"Huevito estrellado sencillo, con carne",
+                    "price":"$56.00",
+                    "image":"img/19.jpg"
+                }
+            ]
+        },
+        {
+            "category":"Comidas",
+            "items":[
+                {
+                    "name":"Tacos a la bolonesa",
+                    "description":"orden de 3 a 5 tacos con carnes de bistec o trompo",
+                    "price":"$90.00",
+                    "image":"img/12.jpg" 
+                },
+                {
+                    "name":"sushi",
+                    "description":"7 Rollitos de sushi con complementos",
+                    "price":"$140.00",
+                    "image":"img/11.jpg" 
+                },
+                {
+                    "name":"Bocoles",
+                    "description":"Orden de 10 bocoles con salsa",
+                    "price":"$90.00",
+                    "image":"img/10.jpg" 
+                },
+                {
+                    "name":"Comida de Dieta",
+                    "description":"Frijoles con arroz, y lo demas es puro complemento",
+                    "price":"$100.00",
+                    "image":"img/9.jpg" 
+                },
+                {
+                    "name":"Salchichas",
+                    "description":"Le viene 4 salchichas cortadas",
+                    "price":"$30.00",
+                    "image":"img/8.jpg" 
+                },
+                {
+                    "name":"Bolonitos",
+                    "description":"Salchichas empanizadas al estilo sushi",
+                    "price":"$80.00",
+                    "image":"img/7.jpg"
+                }
+            ]
+        },
+        {
+            "category":"Postres",
+            "items":[
+                {
+                    "name":"Patelito CB",
+                    "description":"Crema batida en forma de pastel con frutas variadas",
+                    "price":"$57.00",
+                    "image":"img/1.jpg" 
+                },
+                {
+                    "name":"Galletita Lucky",
+                    "description":"Galleta de chocolate bañada en chcolate",
+                    "price":"$30.00",
+                    "image":"img/2.jpg" 
+                },
+                {
+                    "name":"Puddin Gourmet",
+                    "description":"Puddin parecido a la carlota con moras y crema batida",
+                    "price":"$25.00",
+                    "image":"img/3.jpg" 
+                },
+                {
+                    "name":"Chupi Chups",
+                    "description":"vasito lleno de leche, leche condensada, lechera y crema batida",
+                    "price":"$33.00",
+                    "image":"img/4.jpg" 
+                },
+                {
+                    "name":"Rebanada De flan Gourmet",
+                    "description":"Pedazo de flan cubierta de mermelada  de fresa y jarabe de cereza",
+                    "price":"$70.00",
+                    "image":"img/5.jpg" 
+                },
+                {
+                    "name":"Rebanada de chocolate",
+                    "description":"Una rebanada de chocolate amargo",
+                    "price":"$55.00",
+                    "image":"img/6.jpg"
+                }
+            ]
+        },
+        {
+            "category":"Bebidas",
+            "items":[
+                {
+                    "name":"Limonade",
+                    "description":"Vaso de limonada",
+                    "price":"$22.00",
+                    "image":"img/25.jpg" 
+                },
+                {
+                    "name":"Agua",
+                    "description":"Litro de agua",
+                    "price":"$5.00",
+                    "image":"img/26.jpg" 
+                },
+                {
+                    "name":"Coffee",
+                    "description":"Taza de cafe caliente",
+                    "price":"$15.00",
+                    "image":"img/27.jpg" 
+                },
+                {
+                    "name":"Coca Cola",
+                    "description":"600ml de Coca Cola",
+                    "price":"$10.00",
+                    "image":"img/28.jpg" 
+                },
+                {
+                    "name":"Power ADE",
+                    "description":"Un litro de Power, Ya sea azul, rojo o morado",
+                    "price":"$15.00",
+                    "image":"img/29.jpg" 
+                },
+                {
+                    "name":"Coctel",
+                    "description":"coctel sin bebida alcoholica, solo saborizante",
+                    "price":"$65.00",
+                    "image":"img/30.jpg"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>Tienda de Yeraa</title>
+</head>
+<body>
+    <style>
+        img{
+            width: 200px;
+            height: auto;
+        }
+        table, th,td{
+            border: 1px dotted black;
+        }
+        table{
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            box-shadow: 0 5px 15px black;
+            margin-left: 50px;
+            font-family: cursive;
+        }
+        th, th{
+            text-align: left;
+            padding: 8px;
+            font-family: fantasy;
+        }
+        tr:nth-child(even){
+            background-color: rgb(254, 161, 177);
+        }
+        tr:hover{
+            background-color: crimson;
+        }
+    </style>
+        <div style="margin: 24px;">
+            <nav class="navba navbar-light"
+            style="background-color: black;">
+            <div class="countainer">
+                <a class="navbar-brand" href="index.html"
+                >Inicio</a>
+                <div class="collapse navbar-collapse" id="navbarNabDropDown">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item
+                         dropdown">
+                         <a class="nav-link dropdown-toggle"
+                         href="" id="navbarDropdownMenuLink"
+                         data-toggle="dropdown"
+                         aria-haspopup="true"
+                         aria-expanded="false">unidad 1</a>
+                         <div class="dropdown-menu"
+                         aria-labelledby="navbarDripdownMenuLink">
+                         <a class="dropdown-item" href="perfil.html">perfil</a><br>
+                         <a class="dropdown-item" href="calculadora.html">Calculadora</a><br>
+                         <a class="dropdown-item" href="tienda.html">Tienda parte 1</a><br>
+                         </div>
+                        </li>
+                        <li class="nav-item
+                        dropdown">
+                        <a class="nav-link dropdown-toggle"
+                        href="" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">unidad 2</a>
+                        <div class="dropdown-menu"
+                        aria-labelledby="navbarDripdownMenuLink">
+                        <a class="dropdown-item" href="tiendapedido.html">Tienda pedido</a><br>
+                        <a class="dropdown-item" href="json.html">JSON</a><br>
+                        <a class="dropdown-item" href="tiendapedido2.html">Tienda parte 2</a><br>
+                        </div>
+                       </li>
+                       <li class="nav-item
+                       dropdown">
+                       <a class="nav-link dropdown-toggle"
+                       href="" id="navbarDropdownMenuLink"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">unidad 3</a>
+                       <div class="dropdown-menu"
+                       aria-labelledby="navbarDripdownMenuLink">
+                       <a class="dropdown-item" href="API.html">Base de datos</a><br>
+                       <a class="dropdown-item" href="peliculas.html">Peliculas</a><br>
+                       </div>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+        </div>
+    </div>
+    <h1>Desayunos</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/18.jpg" alt="Desayuno"></td>
+            <td><p>5 rebanadas de bimbo quemado con un huevo estrellado, lo demas es puro complemento aparte.. Un desayuno clasico y rapido, el cual te aportara nutrientes para el dia de hoy.</p></td>
+            <td><p>$80.00</p></td>
+        </tr>
+        <tr>
+            <td><img src="img/17.jpg" alt="Desayuno"></td>
+            <td><p>Omelettes con crema y tortillas.Desayuno completo, la eleccion de ponerle crema o no es tuya!!</p></td>
+            <td><p>$70.00</p></td>
+        </tr>
+        <tr>
+            <td><img src="img/16.jpg" alt="Desayuno"></td>
+            <td><p>Huevo con pan y aguacate.Desayuno complejo el cual no es tan pesado y el aguacate es un excelente complemento</p></td>
+            <td><p>$50.00</p></td>
+        </tr>
+        <tr>
+            <td><img src="img/15.jpg" alt="Desayuno"></td>
+            <td><p>huevo estrellado con complementos, los que ve en la imagen. Puede pedir los que sea (solo los que ve en la imagen)</p></td>
+            <td><p>$120.00</p></td>
+        </tr>
+        <tr>
+            <td><img src="img/14.jpg" alt="Desayuno"></td>
+            <td><p>Desayunoo mañanero. Despierte con ganas, Filete, aguacate, y moras..</p></td>
+            <td><p>$60.00</p></td>
+        </tr>
+        <tr>
+            <td><img src="img/13.jpg" alt="Desayuno"></td>
+            <td><p> Frutas variadas al estilo fruit cocktail.. </p></td>
+            <td><p>$45.00</p></td>
+        </tr>
+    </table>
+        <h1>Almuerzos</h1>
+        <table>
+            <tr>
+                <th>Imagen</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td><img src="img/24.jpg" alt="Desayuno"></td>
+                <td><p>ensalada clasica. Con gran variedad de aderezos a escoger, almuerzo saludable</p></td>
+                <td><p>$35.00</p></td>
+            </tr>
+            <tr>
+                <td><img src="img/23.jpg" alt="Desayuno"></td>
+                <td><p>Spagguetti francch. No es pesado es ligero rico para la hora de el almuerzo</p></td>
+                <td><p>$40.00</p></td>
+            </tr>
+            <tr>
+                <td><img src="img/22.jpg" alt="Desayuno"></td>
+                <td><p>Almuerzo estilo michoacan</p></td>
+                <td><p>$70.00</p></td>
+            </tr>
+            <tr>
+                <td><img src="img/21.jpg" alt="Desayuno"></td>
+                <td><p>Almuerzo de dieta,Tipo ensalada de brocoli, saludable, ideal para almuerzo</p></td>
+                <td><p>$70.00</p></td>
+            </tr>
+            <tr>
+                <td><img src="img/20.jpg" alt="Desayuno"></td>
+                <td><p>Sopa con filete remojado de lobo de alaska</p></td>
+                <td><p>$9000.00</p></td>
+            </tr>
+            <tr>
+                <td><img src="img/19.jpg" alt="Desayuno"></td>
+                <td><p>Huevito sencillo con carne y complementos</p></td>
+                <td><p>$56.00</p></td>
+            </tr>
+    </table>
+    <h1>Comida</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/12.jpg" alt="Desayuno"></td>
+            <td><p>Tacos a la bolonesa</p></td>
+            <td><p>$90.00</p></td>
+        </tr>
+        <tr>
+            <td><img src="img/11.jpg" alt="Desayuno"></td>
+            <td><p>sushi</p></td>
+            <td><p>$140.00 la orden de 15</p></td>
+        </tr>
+        <tr>
+            <td><img src="img/10.jpg" alt="Desayuno"></td>
+            <td><p>Bocoles con salsa</p></td>
+            <td><p>$90.00</p></td>
+        </tr>
+        <tr>
+            <td><img src="img/9.jpg" alt="Desayuno"></td>
+            <td><p>Comida de dieta</p></td>
+            <td><p>$100.00</p></td>
+        </tr>
+        <tr>
+            <td><img src="img/8.jpg" alt="Desayuno"></td>
+            <td><p> Salchicas</p></td>
+            <td><p>$30.00</p></td>
+        </tr>
+        <tr>
+            <td><img src="img/7.jpg" alt="Desayuno"></td>
+            <td><p>bolonitos</p></td>
+            <td><p>$80.00</p></td>
+        </tr>
+</table>
+<h1>Postres</h1>
+<table>
+    <tr>
+        <th>Imagen</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+    </tr>
+    <tr>
+        <td><img src="img/6.jpg" alt="Postres"></td>
+        <td><p>Rebanada de Pan de chocolate</p></td>
+        <td><p>$55.00</p></td>
+    </tr>
+    <tr>
+        <td><img src="img/5.jpg" alt="Postres"></td>
+        <td><p>Rebanada de Flan Gourmet</p></td>
+        <td><p>$70.00</p></td>
+    </tr>
+    <tr>
+        <td><img src="img/4.jpg" alt="Postres"></td>
+        <td><p>Chupi Chups Pura lechera y crema batida con leche</p></td>
+        <td><p>$40.00 el vasito</p></td>
+    </tr>
+    <tr>
+        <td><img src="img/3.jpg" alt="Postres"></td>
+        <td><p>Puddin Gourmet</p></td>
+        <td><p>$125.00</p></td>
+    </tr>
+    <tr>
+        <td><img src="img/2.jpg" alt="Postres"></td>
+        <td><p>Galletita Lucky</p></td>
+        <td><p>$25.00</p></td>
+    </tr>
+    <tr>
+        <td><img src="img/1.jpg" alt="Postres"></td>
+        <td><p>Patelito CB</p></td>
+        <td><p>$57.00</p></td>
+    </tr>
+</table>
+<h1>Bebidas</h1>
+<table>
+    <tr>
+        <th>Imagen</th>
+        <th>Descripcion</th>
+        <th>Precio</th>
+    </tr>
+    <tr>
+        <td><img src="img/25.jpg" alt="Desayuno"></td>
+        <td><p>Limonade</p></td>
+        <td><p>$22.00</p></td>
+    </tr>
+    <tr>
+        <td><img src="img/26.jpg" alt="Desayuno"></td>
+        <td><p>Water.</p></td>
+        <td><p>$5.00</p></td>
+    </tr>
+    <tr>
+        <td><img src="img/27.jpg" alt="Desayuno"></td>
+        <td><p>Coffee</p></td>
+        <td><p>$15.00</p></td>
+    </tr>
+    <tr>
+        <td><img src="img/28.jpg" alt="Desayuno"></td>
+        <td><p>Coke</p></td>
+        <td><p>$10.00</p></td>
+    </tr>
+    <tr>
+        <td><img src="img/29.jpg" alt="Desayuno"></td>
+        <td><p>Power ADE</p></td>
+        <td><p>$15.00</p></td>
+    </tr>
+    <tr>
+        <td><img src="img/30.jpg" alt="Desayuno"></td>
+        <td><p>Cocktail</p></td>
+        <td><p>$65.00</p></td>
+    </tr>
+</table>
+
+
+</body>
+</html>

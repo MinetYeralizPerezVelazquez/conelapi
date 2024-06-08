@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>API DE YERA</title>
+</head>
+<body>
+    <div style="margin :24px;">
+        <nav class="nav navbar-light" style ="background-color: black;"> 
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="color: rgb(98, 92, 209);">INICIO</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Unidad 1</a>
+                            <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                        href="PERFIL.html">Perfil</a><br>
+                        <a class="dropdown-item"
+                        href="calculadora.html">Calculadora</a><br>
+                        <a class="dropdown-item"
+                        href="tienda.html">Tienda parte 1</a>
+
+                        </div>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false" >Unidad 2</a>
+                            <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                        href="TiendaPedido.html">tienda pedido</a><br>
+                        <a class="dropdown-item"
+                        href="json.html">JSON</a><br>
+                        <a class="dropdown-item"
+                        href="tiendaPedido2.html">Tienda parte 2</a>
+
+                        </div>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false" >Unidad 3</a>
+                            <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"
+                        href="API.html">base de datos</a><br>
+                        <a class="dropdown-item"
+                        href="peliculas.html">Peliculas</a><br>
+                       
+                        </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    </div>
+
+    <div class="container">
+            <h1>Personajes de Rick and Morty</h1>
+            <div id="characters" class="characters"></div>
+        </div>
+    
+    <style>
+   body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.characters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.character-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    border: 5px solid transparent;
+}
+
+.character-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #00796b;
+}
+
+.character-card h2 {
+    margin: 10px 0;
+    color: #5f3cdb;
+}
+
+.character-card p {
+    color: #000000;
+    font-size: 14px;
+}
+
+.character-card p:first-of-type {
+    font-weight: bold;
+    color: #000000;
+}
+
+.colorful-border {
+    border-color: #29548b;
+}
+
+.colorful-border:hover {
+    border-color: #c55697;
+}
+
+.colorful-border:active {
+    border-color: #4caf50;
+}
+
+    </style>
+
+    <ul id="listadepersonajesrkmty"></ul>
+    <script>
+        function Personajes (){
+            var url = "https://rickandmortyapi.com/api/character";
+            fetch (url)
+            .then(response => response.json())
+            .then(data =>{
+                var listadepersonajesrkmty = document.getElementById("listadepersonajesrkmty");
+                data.results.forEach(personaje => {
+                    var listItem = document.createElement("li");
+                    listenItem.textContent = personaje.name;
+                    listadepersonajesrkmty.appendChild(listenItem);
+
+                    console.log("PRSJ Imagen", personaje.name, ":",personaje.image);
+
+                    var imageElement = document.createAttributeElement("img");
+                    imagenElement.src = personaje.image;
+                    listItem.appendChild(imageElement);
+                });
+            })
+        };
+    </script>
+    <script src="chartbdd.js"></script>
+</body>
+</html>
+</body>
+</html>
